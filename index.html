@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="counter.css">
+    <title>BMI Calculator</title>
+</head>
+
+<body>
+    <center>
+        <div class="container">
+            <h1>Weight Master: The Ultimate Conversion Tool</h1>
+            <label for="inputKilograms"><p id="info">Please enter your weight [kg]</p></label>
+            <br>
+            <input type="text" id="inputKilograms" placeholder="Enter kilograms">
+            <br>
+            <button onclick="convertWeight()">Convert</button>
+            <br>
+            <div id="results">
+                <p id="resultGrams"></p>
+                <p id="resultOunces"></p>
+                <p id="resultPounds"></p>
+            </div>
+            <div id="popupModal" class="modal">
+                <div class="modal-content">
+                    <span class="close-button" onclick="closePopupModal()">&times;</span>
+                    <p id="popupMessage"></p>
+                </div>
+            </div>
+        </div>
+    </center>
+
+    <script src="counter.js"></script>
+</body>
+
+</html>
